@@ -1,31 +1,51 @@
 package laboratoriofinal;
 
 public class Categoria {
-	public class Producto {
-	    private int idProducto;
-	    private String nombre;
-	    private double precio;
-	    private int stock;
 
-	    public Producto(int idProducto, String nombre, double precio, int stock) {
-	        this.idProducto = idProducto;
-	        this.nombre = nombre;
-	        this.precio = precio;
-	        this.stock = stock;
-	    }
+	// Producto como clase estática para poder crearla sin instancia de Categoria
+	public static class Producto {
+		private int idProducto;
+		private String nombre;
+		private double precio;
+		private int stock;
 
-	    // Getters y Setters
-	    public int getIdProducto() { return idProducto; }
-	    public void setIdProducto(int idProducto) { this.idProducto = idProducto; }
+		public Producto(int idProducto, String nombre, double precio, int stock) {
+			this.idProducto = idProducto;
+			this.nombre = nombre;
+			this.precio = precio;
+			this.stock = stock;
+		}
 
-	    public String getNombre() { return nombre; }
-	    public void setNombre(String nombre) { this.nombre = nombre; }
+		public int getIdProducto() {
+			return idProducto;
+		}
 
-	    public double getPrecio() { return precio; }
-	    public void setPrecio(double precio) { this.precio = precio; }
+		public void setIdProducto(int idProducto) {
+			this.idProducto = idProducto;
+		}
 
-	    public int getStock() { return stock; }
-	    public void setStock(int stock) { this.stock = stock; }
+		public String getNombre() {
+			return nombre;
+		}
+
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+
+		public double getPrecio() {
+			return precio;
+		}
+
+		public void setPrecio(double precio) {
+			this.precio = precio;
+		}
+
+		public int getStock() {
+			return stock;
+		}
+
+		public void setStock(int stock) {
+			this.stock = stock;
+		}
 	}
-
 }
